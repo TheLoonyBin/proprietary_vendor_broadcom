@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Asus blob(s) necessary for Flo hardware
-PRODUCT_COPY_FILES := \
-    vendor/asus/flo/proprietary/libacdbdata.so:system/lib/libacdbdata.so:asus \
-    vendor/asus/flo/proprietary/libAKM.so:system/lib/libAKM.so:asus \
+LOCAL_STEM := flo/device-partial.mk
 
+$(call inherit-product-if-exists, vendor/asus/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/qcom/$(LOCAL_STEM))
