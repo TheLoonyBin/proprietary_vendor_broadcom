@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Asus blob(s) necessary for Flo hardware
+# Broadcom blob(s) necessary for Flo hardware
 PRODUCT_COPY_FILES := \
-    vendor/asus/flo/proprietary/libacdbdata.so:system/lib/libacdbdata.so:asus \
-    vendor/asus/flo/proprietary/libAKM.so:system/lib/libAKM.so:asus \
+    vendor/broadcom/flo/proprietary/bcm2079x-b5_firmware.ncd:system/vendor/firmware/bcm2079x-b5_firmware.ncd:broadcom \
+    vendor/broadcom/flo/proprietary/bcm2079x-b5_pre_firmware.ncd:system/vendor/firmware/bcm2079x-b5_pre_firmware.ncd:broadcom \
 
